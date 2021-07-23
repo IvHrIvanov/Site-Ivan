@@ -1,4 +1,3 @@
-let argv = require('yargs').argv;
 const buttonElement = document.querySelector('.show');
 const portFolioSection = document.querySelector('.portFolio');
 buttonElement.addEventListener('click', (e) => {

@@ -2,7 +2,7 @@
   "name": "site-ivan",
   "version": "1.0.0",
   "description": "Format site",
-  "main": "index.html",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",

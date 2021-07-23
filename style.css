@@ -1,0 +1,664 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        justify-content: center;
+        align-items: center;
+        height: 400vh;
+        line-height: 1.6;
+        font-family: 'Lato', sans-serif;
+        -ms-overflow-style: none;
+        /* for Internet Explorer, Edge */
+        scrollbar-width: none;
+        /* for Firefox */
+        overflow-y: scroll;
+    }
+
+    body::-webkit-scrollbar {
+        display: none;
+        /* for Chrome, Safari, and Opera */
+    }
+
+    .imgContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .imgContainer .imgBox {
+        position: relative;
+        width: 300px;
+        height: 230px;
+    }
+
+    .imgContainer .imgBox img {
+        position: absolute;
+        top: -5%;
+        left: 10%;
+        width: 80%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 30%;
+    }
+
+    .navbar {
+        top: 0%;
+        z-index: 1;
+        height: 70px;
+        width: 100%;
+        position: fixed;
+        background-color: black;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 0 2rem;
+        padding: 1rem;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: white;
+    }
+
+    .fullStack {
+        z-index: 2;
+        top: 15px;
+        left: 40px;
+        position: fixed;
+        color: white;
+    }
+
+    #dev {
+        font-size: 25px;
+        letter-spacing: 8px;
+    }
+
+    .centerE {
+        height: 100%;
+        width: 38%;
+        left: 0%;
+        position: relative;
+        top: 10%;
+        letter-spacing: 3px;
+        display: inline-block;
+        border-radius: 40px;
+        padding: 20px;
+    }
+
+    .webDev {
+        color: white;
+        font-size: 70px;
+        text-align: center;
+    }
+
+    .Hello {
+        color: white;
+        font-size: 60px;
+        text-align: center;
+        position: relative;
+        top: 50px;
+        letter-spacing: 2px;
+    }
+
+    .MyName {
+        position: relative;
+        top: 90px;
+        color: white;
+        font-size: 55px;
+        text-align: center;
+        line-height: 55px;
+        letter-spacing: 4px;
+    }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        /* Scroll Snap */
+        scroll-snap-align: center;
+    }
+
+    #box {
+        background: url("/icons/desckTwo.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .secondSection {
+        background-color: black;
+    }
+
+    .navbar {
+        position: fixed;
+        bottom: 20px;
+        padding-top: 10px;
+    }
+
+    .navbar ul {
+        display: flex;
+        list-style: none;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .navbar ul li {
+        margin: 0 2rem;
+        padding: 1rem;
+    }
+
+    .navbar ul li a {
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-left: 20px;
+        position: relative;
+        padding: 10px 30px;
+        margin: 0 15px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .navbar ul li a:hover {
+        background-color: #21ebff;
+        color: #111;
+        box-shadow: 0 0 50px #21ebff;
+        transition-delay: 0.3s;
+        border-radius: 5px;
+    }
+
+    .navbar ul li a:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #21ebff;
+        border-left: 2px solid #21ebff;
+        transition: 0.3s;
+    }
+
+    .navbar ul li a:hover:before {
+        width: 97%;
+        height: 90%;
+    }
+
+    .navbar ul li a:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #21ebff;
+        border-right: 2px solid #21ebff;
+        transition: 0.5s;
+    }
+
+    .navbar ul li a:hover:after {
+        width: 95%;
+        height: 95%;
+    }
+
+    .show {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        color: white;
+        bottom: 200px;
+        letter-spacing: 7px;
+        background-color: transparent;
+        border-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-left: 20px;
+        padding: 10px 30px;
+        margin: 0 20px;
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .show:hover {
+        padding: 30px 50px;
+        background-color: #21ebff;
+        color: white;
+        box-shadow: 0 0 50px #21ebff;
+        transition-delay: 0.3s;
+        border-radius: 5px;
+    }
+
+    .show:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #21ebff;
+        border-left: 2px solid #21ebff;
+        transition: 0.3s;
+    }
+
+    .show:hover:before {
+        width: 97%;
+        height: 90%;
+    }
+
+    .show:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #21ebff;
+        border-right: 2px solid #21ebff;
+        transition: 0.5s;
+    }
+
+    .show:hover:after {
+        width: 95%;
+        height: 95%;
+    }
+
+    .MySkill {
+        text-transform: uppercase;
+        position: relative;
+        top: 71%;
+        color: white;
+        font-size: 50px;
+        letter-spacing: 10px;
+    }
+
+    .skills {
+        position: relative;
+        width: 500px;
+        margin: 500px auto;
+        color: white;
+        right: 30%;
+        top: -37%;
+    }
+
+    .skills li {
+        margin: 20px 0;
+        list-style: none;
+        padding: 0;
+    }
+
+    .skills li h2 {
+        position: relative;
+        text-align: left;
+        letter-spacing: 5px;
+    }
+
+    .bar {
+        background: #353b48;
+        display: block;
+        height: 10px;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+        overflow: hidden;
+        box-shadow: 0 0 10px #21ebff;
+        border-radius: 20px;
+    }
+
+    .bar span {
+        border-radius: 20px;
+        height: 10px;
+        float: left;
+        background: #21ebff;
+    }
+
+    .html {
+        width: 90%;
+        animation: html 2s;
+    }
+
+    .front {
+        width: 95%;
+        animation: front 2s;
+    }
+
+    .back {
+        width: 85%;
+        animation: back 2s;
+    }
+
+    .react {
+        width: 40%;
+        animation: react 2s;
+    }
+
+    .design {
+        width: 92%;
+        animation: design 2s;
+    }
+
+    @keyframes html {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 90%;
+        }
+    }
+
+    @keyframes front {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 95%;
+        }
+    }
+
+    @keyframes back {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 85%;
+        }
+    }
+
+    @keyframes react {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 40%;
+        }
+    }
+
+    @keyframes design {
+        0% {
+            width: 0%;
+        }
+        100% {
+            width: 92%;
+        }
+    }
+
+    .secondSection img {
+        position: relative;
+        width: 62%;
+        left: 19%;
+        top: 75%
+    }
+
+    .thirdSection {
+        background-color: black;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+
+    .thirdSection h1 {
+        text-transform: uppercase;
+        font-size: 70px;
+        position: relative;
+        color: white;
+        letter-spacing: 10px;
+        bottom: 65px;
+    }
+
+    .links {
+        position: relative;
+        right: 65px;
+        top: 5%;
+        transition: 0.5s;
+    }
+
+    .links ul {
+        display: flex;
+        list-style: none;
+    }
+
+    .links ul li img {
+        width: auto;
+        height: 170px;
+        margin-left: 150px;
+    }
+
+    .links ul li img:hover {
+        transform: scale(1.2);
+    }
+
+    .portFolio {
+        background-color: white;
+    }
+
+    .portFolio img {
+        position: relative;
+        width: 600px;
+        height: auto;
+        border-radius: 70%;
+        left: 33%;
+        top:30%;
+    }
+
+    .portFolio h3 {
+        color: black;
+        position: relative;
+        font-size: 70px;
+        right: 37%;
+        top: -33%;
+        letter-spacing: 6px;
+    }
+
+    .firstLine {
+        color: black;
+        width: 40%;
+        height: 5%;
+        position: relative;
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-size: 33px;
+        top: -30%;
+        right: 25.5%;
+        text-align: left;
+    }
+
+    .aboutMe {
+        color: black;
+        width: 25%;
+        height: 40%;
+        position: relative;
+        font-size: 20px;
+        letter-spacing: 3px;
+        font-size: 25px;
+        right: 33%;
+        text-align: left;
+        top: -20%;
+    }
+
+    .emailBox {
+        position: relative;
+        top: 7%;
+        display: grid;
+        width: 30%;
+        height: 35%;
+        justify-content: center;
+        right: 35px;
+    }
+
+    .Names {
+        width: 400px;
+        height: 30px;
+        border-radius: 10px;
+        position: relative;
+        outline-style: none;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+
+    .Names:focus {
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+
+    .email {
+        width: 400px;
+        height: 30px;
+        position: relative;
+        border-radius: 10px;
+        outline-style: none;
+        bottom: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 20px;
+    }
+
+    .email:focus {
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 10px #9ecaed;
+    }
+
+    .textSomething {
+        width: 400px;
+        height: 150px;
+        border-radius: 10px;
+        position: relative;
+        outline-style: none;
+        padding-top: 0;
+    }
+
+    .textSomething:focus {
+        outline: none;
+        border-color: #9ecaed;
+        box-shadow: 0 0 15px #9ecaed;
+    }
+
+    .FullName {
+        position: relative;
+        color: white;
+        right: 59%;
+        top: 94%;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .emailText {
+        position: relative;
+        color: white;
+        right: 59%;
+        top: 42%;
+        font-size: 20px;
+        letter-spacing: 3px;
+    }
+
+    .Text {
+        letter-spacing: 3px;
+        position: relative;
+        color: white;
+        right: 58%;
+        bottom: 100px;
+        font-size: 20px;
+    }
+
+    .send {
+        position: relative;
+        display: inline-block;
+        font-size: 22px;
+        color: white;
+        top: 10px;
+        right: 10px;
+        overflow: hidden;
+        letter-spacing: 7px;
+        background-color: transparent;
+        border-style: none;
+        text-decoration: none;
+        font-size: 20px;
+        color: white;
+        margin-left: 20px;
+        padding: 10px 30px;
+        transition: 0.5s;
+    }
+
+    .send:hover {
+        position: relative;
+        transform: scale(1.2);
+        background-color: #21ebff;
+        color: white;
+        box-shadow: 0 0 50px #21ebff;
+        transition-delay: 0.3s;
+        border-radius: 5px;
+    }
+
+    .send:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 10px;
+        height: 10px;
+        border-top: 2px solid #21ebff;
+        border-left: 2px solid #21ebff;
+        transition: 0.3s;
+    }
+
+    .send:hover:before {
+        width: 97%;
+        height: 90%;
+    }
+
+    .send:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-bottom: 2px solid #21ebff;
+        border-right: 2px solid #21ebff;
+        transition: 0.5s;
+    }
+
+    .send:hover:after {
+        width: 50%;
+        height: 95%;
+    }
+
+    .emailBox textarea {
+        padding: 8px;
+        font-size: 17px;
+    }
+
+    .confirm {
+        border: 2px solid green;
+        border-radius: 3px;
+        outline: none;
+        box-shadow: 0 0 20px green;
+    }
+
+    .error {
+        border: 2px solid red;
+        border-radius: 7px;
+        outline: none;
+        box-shadow: 0 0 20px red;
+    }
+
+    .formMove {
+        position: relative;
+        left: 200px;
+        top: 50px;
+    }

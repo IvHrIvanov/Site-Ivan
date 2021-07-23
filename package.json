@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/IvHrIvanov/Site-Ivan/issues"
   },
-  "homepage": "https://github.com/IvHrIvanov/Site-Ivan#readme"
+  "homepage": "https://github.com/IvHrIvanov/Site-Ivan#readme",
+  "dependencies": {
+    "yargs": "^17.0.1"
+  }
 }

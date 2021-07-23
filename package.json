@@ -4,11 +4,12 @@
   "description": "Site",
   "main": "func.js",
   "scripts": {
-    "build": "react-scripts build",
-    "code:check": "yarn code:lint && yarn code:format --check",
-    "validate": "run-p --print-label lint typecheck test build",
-    "preversion": "git pull",
-    "postversion": "git push && git push --tags"
+    "build": "npm run build",
+    "develop": "gatsby develop",
+    "format": "prettier --write **/*.{js,jsx,json,md}",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "keywords": [
     "Site",

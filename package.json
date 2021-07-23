@@ -4,7 +4,11 @@
   "description": "Site",
   "main": "func.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "react-scripts build",
+    "code:check": "yarn code:lint && yarn code:format --check",
+    "validate": "run-p --print-label lint typecheck test build",
+    "preversion": "git pull",
+    "postversion": "git push && git push --tags"
   },
   "keywords": [
     "Site",

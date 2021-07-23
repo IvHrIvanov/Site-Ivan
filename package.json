@@ -1,0 +1,23 @@
+{
+  "name": "site-ivan",
+  "version": "1.0.0",
+  "description": "Format site",
+  "main": "\u001b[D\u001b[D\u001b[D\u001b[D\u001b[C\u001b[C\u001b[C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IvHrIvanov/Site-Ivan.git"
+  },
+  "keywords": [
+    "format",
+    "site"
+  ],
+  "author": "Ivan Ivanov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IvHrIvanov/Site-Ivan/issues"
+  },
+  "homepage": "https://github.com/IvHrIvanov/Site-Ivan#readme"
+}
